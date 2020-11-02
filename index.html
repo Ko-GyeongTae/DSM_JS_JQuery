@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>0921</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="box", id="id">
+        <p><input type='text' name='title' value="ID 입력"></p>
+        <p><button onclick="document.getElementById('id').style.display='none';">닫기</button></p>
+    </div>
+    <div class="box", id="pw">
+        <p><input type='text' name='title' value="PW 입력"></p>
+        <p><button onclick="document.getElementById('pw').style.display='none';">닫기</button></p>
+    </div>
+    <button onclick="document.getElementById('id').style.display='block';">버튼1</button>
+    <button onclick="document.getElementById('pw').style.display='block';">버튼2</button>
+    
+    
+    <div class="box" id="alert">
+        <p> 모달창 </p>
+        <button onclick="mondalWindow('none')">닫기</button>
+    </div>
+    <button onclick="mondalWindow('block')">버튼</button>
+    <script>
+        function mondalWindow(val){
+            document.getElementById('alert').style.display=val;
+        }
+    </script>
+</body>
+</head>    
+</html>
+

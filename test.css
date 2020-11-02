@@ -1,0 +1,8 @@
+.box{
+    background: grey;
+    color: wheat;
+    border-radius: 13px;
+    padding:20px;
+    widows: 50px;
+    display:none;
+}
