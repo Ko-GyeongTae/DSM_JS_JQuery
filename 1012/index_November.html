@@ -19,12 +19,18 @@
                 <option>셔츠</option>
                 <option>바지</option>
             </select>
-            <div class="size-select">
+            <!--<div class="size-select">
                 <p class="mt-4">사이즈선택</p>
                 <select class="form-control" id="option2">
                     <option>95</option>
                     <option>100</option>
                     <option>105</option>
+                </select>
+            </div>-->
+            <div class="size-select">
+                <p class="mt-4">사이즈선택</p>
+                <select class="form-control" id="option2">
+                    
                 </select>
             </div>
         </div>
@@ -38,12 +44,23 @@
         $('#option1').on('change', function(){
             if($('#option1').val()=='셔츠'){
                 $('.size-select').show();
+                $('#option2').html('');
+                var tmp = `<option>95</option>
+                    <option>100</option>
+                    <option>105</option>`;
+                $('#option2').append(tmp);
             }
             else if($('#option1').val()=='바지'){
                 $('.size-select').show();
+                $('#option2').html('');
+                var tmp = `<option>28</option>
+                    <option>30</option>
+                    <option>32</option>`;
+                $('#option2').append(tmp);
             }
             else if($('#option1').val()=='모자'){
                 $('.size-select').hide();
+                
             }
         })
     </script>
