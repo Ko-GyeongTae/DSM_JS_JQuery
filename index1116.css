@@ -1,0 +1,11 @@
+.grey{
+    background: grey;
+    height: 2000px;
+    margin-top: 600px;
+    margin-bottom: 1600px;
+}
+
+.sticky{
+    position: fixed;
+    top: 100px;
+}
