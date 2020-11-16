@@ -5,7 +5,20 @@
     margin-bottom: 1600px;
 }
 
+.white{
+    background-color: white;
+    height: 4000px;
+    margin-top: 600px;
+}
+
 .sticky{
     position: fixed;
     top: 100px;
+    float: right;
+}
+
+.left-text{
+    float: left;
+    color: black;
+    padding: 10px;
 }
