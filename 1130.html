@@ -13,17 +13,18 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
+        
         var h1태그 = document.querySelector('h1');
         var 원래글씨 = document.querySelector('h1').innerHTML;
         var count = 원래글씨.length
-        $('button').click(function () {
+        window.onload = function () {
             h1태그.innerHTML = "";
             for (let i = 0; i < count; i++) {
                 setTimeout(function () {
                     h1태그.innerHTML = h1태그.innerHTML + 원래글씨[i];
                 }, 300 * (i + 1));
             };
-        });
+        };
 
     </script>
 
